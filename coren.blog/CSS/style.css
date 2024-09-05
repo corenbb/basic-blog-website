@@ -1,0 +1,117 @@
+/* style.css */
+body {
+  font-family: Helvetica,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1E81F2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #1E81F2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Posts List */
+.posts-list {
+  margin: 20px;
+  padding: 0;
+}
+
+.posts-list article {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post-title {
+  cursor: pointer;
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+.post-title:hover {
+  color: #0056b3;
+}
+
+.post-date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.post-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+}
+
+.post-content.show {
+  max-height: 500px; /* Adjust this value based on the expected content size */
+}
+
+
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  margin-right: 8px;  /* Adds spacing between icon and text */
+  vertical-align: middle;
+}
+
+.social-media a:hover {
+  color: #007BFF;
+}
